@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <Title />
       <Form />
-      <p>This is a test</p>
     </div>
   );
 }

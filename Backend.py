@@ -1,10 +1,12 @@
 from flask import Flask, render_template,make_response,send_file,abort,request,redirect
 from flask_restful import Api,Resource,fields,reqparse,marshal_with,marshal
+from flask_cors import CORS
 import ollama
 
 app = Flask(__name__)
 api = Api(app)
 app.config['SECRET_KEY'] = 'bacaa3381e4c453088449ccd04f270cf'
+CORS(app)
 
 add = '127.0.0.1:5000'
 
