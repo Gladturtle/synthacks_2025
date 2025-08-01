@@ -1,10 +1,12 @@
+import './Title.css'
+
+
 function Title() {
     return(
 
         <>
         
-            <h1 className="Title">This is the title!</h1>
-        
+            <h1 className="title">Industrial Planner</h1>
         
         </>
 
