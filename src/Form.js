@@ -68,9 +68,9 @@ function Form() {
                     </form>
                 </div> 
             ) : (
-                <div>
-                    <h1>Advice:</h1><br />
-                    <p>{adviceText}</p>
+                <div className='center'>
+                    <h1 className='advTitle'>Advice:</h1><br />
+                    <p className='advText'>{adviceText}</p>
                     <button onClick={handleBack} className='subback'>Go Back</button>
                 </div>
             )}
