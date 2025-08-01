@@ -6,7 +6,7 @@ function Title() {
 
         <>
         
-            <h1 className="title">Industrial Planner</h1>
+            <h1 className="title">Industrial Construction Planner</h1>
         
         </>
 

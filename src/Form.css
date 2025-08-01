@@ -1,3 +1,22 @@
 div {
     text-align: center;
 }
+
+button.subback {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #238636;
+    border: 0.2px solid #439853;
+    color: white;
+}
+
+
+input.panel-entry {
+    background-color: #313335;
+    border: 1px solid #454749;
+    border-radius: 8px;
+    padding: 6px;
+    margin-right: 7px;
+    top: 15%;
+}

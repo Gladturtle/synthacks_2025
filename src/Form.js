@@ -63,15 +63,15 @@ function Form() {
             {!showAdvice ? (
                 <div className='center'>
                     <form onSubmit={handleSubmit}>
-                        <input type="text" value={ location } onChange={(e) => setLocation(e.target.value)} placeholder='Enter your location'/>
-                        <button type='submit'>Get Advice</button>
+                        <input type="text" value={ location } onChange={(e) => setLocation(e.target.value)} placeholder='Enter your location' className='panel-entry'/>
+                        <button type='submit' className='subback'>Get Advice</button>
                     </form>
                 </div> 
             ) : (
                 <div>
                     <h1>Advice:</h1><br />
                     <p>{adviceText}</p>
-                    <button onClick={handleBack}>Go Back</button>
+                    <button onClick={handleBack} className='subback'>Go Back</button>
                 </div>
             )}
         </>
