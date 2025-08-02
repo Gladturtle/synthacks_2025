@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import './Form.css';
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 
 async function getFromAPI(name) {
@@ -70,7 +74,12 @@ function Form() {
             ) : (
                 <div className='center'>
                     <h1 className='advTitle'>Advice:</h1><br />
-                    <p className='advText'>{adviceText}</p>
+                    <div className='font'>
+                        <Markdown remarkPlugins={[remarkGfm]} >
+                        {adviceText}
+                        </Markdown>
+                    </div>
+                    
                     <button onClick={handleBack} className='subback'>Go Back</button>
                 </div>
             )}
